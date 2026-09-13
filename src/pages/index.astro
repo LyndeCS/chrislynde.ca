@@ -2,9 +2,9 @@
 import '../styles/global.css';
 
 const links = [
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/chrislynde/' },
   { label: 'GitHub', href: 'https://github.com/LyndeCS' },
-  { label: 'Email', href: 'mailto:hello@chrislynde.ca' },
+  { label: 'Email', href: 'mailto:lyndechris@gmail.com' },
 ];
 ---
 
@@ -15,6 +15,10 @@ const links = [
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content="Chris Lynde — software solutions, automation, and process improvement." />
     <meta name="theme-color" content="#f7f7f5" />
+    <meta property="og:title" content="Chris Lynde — Software Solutions" />
+    <meta property="og:description" content="Software solutions, automation, and process improvement." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://chrislynde.ca" />
     <title>Chris Lynde — Software Solutions</title>
   </head>
   <body>
@@ -47,7 +51,7 @@ const links = [
                   href={link.href}
                   target={link.href.startsWith('http') ? '_blank' : undefined}
                   rel={link.href.startsWith('http') ? 'noreferrer' : undefined}
-                  class="group inline-flex items-center gap-3 rounded-full border border-zinc-300/80 bg-white/55 px-5 py-3 text-sm font-medium text-zinc-800 backdrop-blur-sm transition hover:-translate-y-0.5 hover:border-zinc-400 hover:bg-white"
+                  class="group inline-flex items-center gap-3 rounded-full border border-zinc-300/80 bg-white/55 px-5 py-3 text-sm font-medium text-zinc-800 backdrop-blur-sm transition hover:-translate-y-0.5 hover:border-zinc-400 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#6d5efc]"
                 >
                   {link.label}
                   <span aria-hidden="true" class="text-zinc-400 transition-transform group-hover:translate-x-0.5">↗</span>
