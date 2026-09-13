@@ -1,3 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 592 697" role="img" aria-label="Abstract purple watercolor mist">
-  <image width="592" height="697" href="data:image/webp;base64,UklGRq8PAQB..." />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 720" aria-hidden="true">
+  <defs>
+    <radialGradient id="mistA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5d46ed" stop-opacity="0.52"/>
+      <stop offset="38%" stop-color="#6d5efc" stop-opacity="0.34"/>
+      <stop offset="70%" stop-color="#9689ff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#cfc8ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mistB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7765f5" stop-opacity="0.40"/>
+      <stop offset="46%" stop-color="#8f80fb" stop-opacity="0.24"/>
+      <stop offset="78%" stop-color="#b8afff" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#ddd9ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mistC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a295ff" stop-opacity="0.28"/>
+      <stop offset="58%" stop-color="#beb6ff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#e7e4ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soften" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#soften)">
+    <ellipse cx="528" cy="142" rx="180" ry="132" fill="url(#mistC)" transform="rotate(-8 528 142)"/>
+    <ellipse cx="476" cy="226" rx="168" ry="146" fill="url(#mistB)" transform="rotate(11 476 226)"/>
+    <ellipse cx="554" cy="280" rx="174" ry="160" fill="url(#mistA)" transform="rotate(-7 554 280)"/>
+    <ellipse cx="485" cy="365" rx="186" ry="154" fill="url(#mistB)" transform="rotate(8 485 365)"/>
+    <ellipse cx="570" cy="420" rx="190" ry="175" fill="url(#mistA)" transform="rotate(-6 570 420)"/>
+    <ellipse cx="447" cy="475" rx="158" ry="132" fill="url(#mistC)" transform="rotate(12 447 475)"/>
+    <ellipse cx="540" cy="555" rx="186" ry="150" fill="url(#mistB)" transform="rotate(-3 540 555)"/>
+    <ellipse cx="615" cy="330" rx="130" ry="240" fill="url(#mistA)" opacity="0.58"/>
+  </g>
+
+  <g opacity="0.28">
+    <ellipse cx="520" cy="318" rx="126" ry="112" fill="url(#mistA)"/>
+    <ellipse cx="590" cy="445" rx="112" ry="128" fill="url(#mistA)"/>
+    <ellipse cx="455" cy="410" rx="106" ry="94" fill="url(#mistB)"/>
+  </g>
 </svg>
