@@ -13,44 +13,47 @@ const links = [
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Chris Lynde — software solutions, automation, and process improvement." />
+    <meta name="description" content="Chris Lynde — software solutions, automation, and systems that make everyday work simpler, faster, and more effective." />
     <meta name="theme-color" content="#f7f7f5" />
     <meta name="color-scheme" content="light" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://chrislynde.com/" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta property="og:title" content="Chris Lynde — Software Solutions" />
-    <meta property="og:description" content="Software solutions, automation, and process improvement." />
+    <meta property="og:description" content="Software solutions, automation, and systems that make everyday work simpler, faster, and more effective." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://chrislynde.com/" />
     <meta property="og:site_name" content="Chris Lynde" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Chris Lynde — Software Solutions" />
-    <meta name="twitter:description" content="Software solutions, automation, and process improvement." />
+    <meta name="twitter:description" content="Software solutions, automation, and systems that make everyday work simpler, faster, and more effective." />
     <title>Chris Lynde — Software Solutions</title>
   </head>
   <body>
     <main class="min-h-dvh px-6 py-8 sm:px-10 sm:py-10 lg:px-16 lg:py-8">
       <div class="mx-auto flex min-h-[calc(100dvh-4rem)] max-w-[1480px] flex-col sm:min-h-[calc(100dvh-5rem)] lg:min-h-[calc(100dvh-4rem)]">
-        <header class="flex items-center justify-between gap-6 text-[0.72rem] font-medium uppercase tracking-[0.28em] text-zinc-500">
-          <a href="/" aria-label="Chris Lynde home" class="text-zinc-900 transition-opacity hover:opacity-60 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#6d5efc]">Chris Lynde</a>
-          <span class="hidden normal-case tracking-normal text-zinc-500 sm:block">London, Ontario</span>
+        <header class="flex items-center justify-between gap-6 text-zinc-500">
+          <a href="/" aria-label="Chris Lynde home" class="group inline-flex items-center gap-2.5 text-[0.88rem] font-semibold uppercase tracking-[0.2em] text-zinc-900 transition-opacity hover:opacity-65 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#6d5efc] sm:text-[0.95rem]">
+            Chris Lynde
+            <span aria-hidden="true" class="h-1.5 w-1.5 rounded-full bg-[#6d5efc] transition-transform group-hover:scale-125"></span>
+          </a>
+          <span class="hidden text-[0.72rem] font-medium tracking-normal text-zinc-500 sm:block">London, Ontario</span>
         </header>
 
-        <section class="flex flex-1 items-center py-16 sm:py-20 lg:py-10 xl:py-12">
-          <div class="w-full max-w-5xl">
+        <section class="relative flex flex-1 items-center py-16 sm:py-20 lg:py-10 xl:py-12">
+          <div class="relative z-10 w-full max-w-5xl">
             <div aria-hidden="true" class="mb-8 h-[3px] w-12 rounded-full bg-[#6d5efc] sm:mb-10 lg:mb-7"></div>
 
             <p class="mb-5 text-sm font-medium tracking-[0.08em] text-zinc-500 sm:text-base lg:mb-4">
-              Software Solutions <span class="mx-2 text-zinc-300">·</span> Automation <span class="mx-2 text-zinc-300">·</span> Process Improvement
+              Software Solutions <span class="mx-2 text-zinc-300">·</span> Automation <span class="mx-2 text-zinc-300">·</span> Systems
             </p>
 
             <h1 class="hero-title max-w-5xl font-semibold leading-[0.94] tracking-[-0.06em] text-zinc-950">
-              I turn inefficient workflows into practical software solutions.
+              I solve real-world problems by designing better ways to work.
             </h1>
 
             <p class="mt-7 max-w-3xl text-lg leading-relaxed text-zinc-600 sm:mt-8 sm:text-xl lg:mt-6 lg:text-[1.25rem] lg:leading-[1.55]">
-              I use software, automation, and system design to make everyday work simpler, faster, and more effective.
+              Using software, automation, and system design, I make everyday work simpler, faster, and more effective.
             </p>
 
             <nav aria-label="Contact and profile links" class="mt-9 flex flex-wrap gap-3 sm:mt-10 lg:mt-7">
@@ -66,6 +69,19 @@ const links = [
                 </a>
               ))}
             </nav>
+          </div>
+
+          <div class="workflow-mark" aria-hidden="true">
+            <svg viewBox="0 0 420 300" role="presentation">
+              <path class="workflow-path workflow-path-a" d="M28 211H112C131 211 141 201 141 182V118C141 99 151 89 170 89H262C281 89 291 99 291 118V145" />
+              <path class="workflow-path workflow-path-b" d="M291 145V183C291 202 301 212 320 212H392" />
+              <path class="workflow-path workflow-path-c" d="M291 145H367" />
+              <circle class="workflow-node workflow-node-muted workflow-node-1" cx="28" cy="211" r="6" />
+              <circle class="workflow-node workflow-node-muted workflow-node-2" cx="141" cy="145" r="6" />
+              <circle class="workflow-node workflow-node-accent workflow-node-3" cx="291" cy="145" r="8" />
+              <circle class="workflow-node workflow-node-muted workflow-node-4" cx="367" cy="145" r="6" />
+              <circle class="workflow-node workflow-node-muted workflow-node-5" cx="392" cy="212" r="6" />
+            </svg>
           </div>
         </section>
 
