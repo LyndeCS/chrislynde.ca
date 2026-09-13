@@ -1,29 +1,33 @@
 @import "tailwindcss";
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #0d0f12;
-  color: #f4f4f5;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  background: #f7f7f5;
+  color: #101015;
 }
 
 html {
-  background: #0d0f12;
+  background: #f7f7f5;
+  scroll-behavior: smooth;
 }
 
 body {
+  margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  margin: 0;
+  background:
+    radial-gradient(circle at 88% 38%, rgba(109, 94, 252, 0.10), transparent 30rem),
+    radial-gradient(circle at 70% 85%, rgba(182, 165, 255, 0.08), transparent 28rem),
+    #f7f7f5;
 }
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 ::selection {
-  background: #b7ff4a;
-  color: #0d0f12;
+  background: #6d5efc;
+  color: white;
 }
