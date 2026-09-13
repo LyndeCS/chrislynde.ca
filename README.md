@@ -1,4 +1,4 @@
-# chrislynde.ca
+# chrislynde.com
 
 Minimal personal landing page built with Astro, TypeScript, and Tailwind CSS.
 
@@ -23,4 +23,4 @@ The site is configured for Cloudflare Workers static assets via `wrangler.jsonc`
 npm run deploy
 ```
 
-Production domain: `chrislynde.ca`
+Production domain: `chrislynde.com`
