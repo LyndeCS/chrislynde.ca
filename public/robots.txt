@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chrislynde.ca/sitemap-index.xml
