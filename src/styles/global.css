@@ -18,12 +18,17 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  min-height: 100dvh;
   background:
     radial-gradient(circle at 88% 38%, rgba(109, 94, 252, 0.10), transparent 30rem),
     radial-gradient(circle at 70% 85%, rgba(182, 165, 255, 0.08), transparent 28rem),
     #f7f7f5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.hero-title {
+  font-size: clamp(3.25rem, min(6.2vw, 10vh), 6.5rem);
 }
 
 a {
