@@ -20,8 +20,8 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   background:
-    radial-gradient(circle at 88% 38%, rgba(109, 94, 252, 0.10), transparent 30rem),
-    radial-gradient(circle at 70% 85%, rgba(182, 165, 255, 0.08), transparent 28rem),
+    radial-gradient(circle at 88% 38%, rgba(109, 94, 252, 0.08), transparent 30rem),
+    radial-gradient(circle at 70% 85%, rgba(182, 165, 255, 0.06), transparent 28rem),
     #f7f7f5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -33,80 +33,21 @@ body {
 
 .hero-accent {
   position: absolute;
-  top: 50%;
-  right: 1.5rem;
+  top: 49%;
+  right: -1.5rem;
   display: none;
-  width: min(34vw, 34rem);
-  aspect-ratio: 1 / 1;
+  width: min(33vw, 35rem);
   transform: translateY(-50%);
   pointer-events: none;
   z-index: 0;
+  opacity: 0.96;
 }
 
-.hero-accent-glow,
-.hero-accent-ring,
-.hero-accent-slash,
-.hero-accent-core {
-  position: absolute;
-}
-
-.hero-accent-glow {
-  inset: 14% 16%;
-  border-radius: 999px;
-  background: radial-gradient(
-    circle at 50% 50%,
-    rgba(109, 94, 252, 0.20) 0%,
-    rgba(109, 94, 252, 0.12) 28%,
-    rgba(109, 94, 252, 0.04) 50%,
-    rgba(109, 94, 252, 0) 72%
-  );
-  filter: blur(26px);
-  opacity: 0.95;
-}
-
-.hero-accent-ring {
-  inset: 4%;
-  border-radius: 44% 56% 58% 42% / 40% 38% 62% 60%;
-  background: conic-gradient(
-    from 212deg,
-    transparent 0deg 40deg,
-    rgba(109, 94, 252, 0.75) 40deg 138deg,
-    rgba(182, 165, 255, 0.45) 138deg 190deg,
-    transparent 190deg 360deg
-  );
-  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 10px), #000 calc(100% - 9px));
-  mask: radial-gradient(farthest-side, transparent calc(100% - 10px), #000 calc(100% - 9px));
-  opacity: 0.95;
-}
-
-.hero-accent-slash {
-  left: 51%;
-  top: 26%;
-  width: 34%;
-  height: 2px;
-  border-radius: 999px;
-  background: linear-gradient(
-    90deg,
-    rgba(109, 94, 252, 0),
-    rgba(109, 94, 252, 0.88),
-    rgba(109, 94, 252, 0.18)
-  );
-  transform: rotate(34deg);
-  transform-origin: left center;
-  box-shadow: 0 0 18px rgba(109, 94, 252, 0.18);
-}
-
-.hero-accent-core {
-  left: 55%;
-  top: 49%;
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: #6d5efc;
-  transform: translate(-50%, -50%);
-  box-shadow:
-    0 0 0 8px rgba(109, 94, 252, 0.06),
-    0 0 26px rgba(109, 94, 252, 0.20);
+.hero-accent img {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
 }
 
 a {
@@ -127,8 +68,8 @@ a {
 
 @media (min-width: 1536px) {
   .hero-accent {
-    right: 2.5rem;
-    width: min(32vw, 36rem);
+    right: -1rem;
+    width: min(34vw, 37rem);
   }
 }
 
