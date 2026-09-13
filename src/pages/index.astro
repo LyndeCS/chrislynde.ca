@@ -59,26 +59,22 @@ const links = [
                   href={link.href}
                   target={link.href.startsWith('http') ? '_blank' : undefined}
                   rel={link.href.startsWith('http') ? 'noreferrer' : undefined}
-                  class="group inline-flex items-center gap-3 rounded-full border border-zinc-300/80 bg-white/55 px-5 py-3 text-sm font-medium text-zinc-800 backdrop-blur-sm transition hover:-translate-y-0.5 hover:border-zinc-400 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#6d5efc]"
+                  class="group inline-flex items-center gap-3 rounded-full border border-zinc-300/80 bg-white/55 px-5 py-3 text-sm font-medium text-zinc-800 backdrop-blur-sm transition hover:-translate-y-0.5 hover:border-[#6d5efc]/50 hover:bg-[#6d5efc]/[0.03] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#6d5efc]"
                 >
                   {link.label}
-                  <span aria-hidden="true" class="text-zinc-400 transition-transform group-hover:translate-x-0.5">↗</span>
+                  <span aria-hidden="true" class="text-zinc-400 transition-all group-hover:translate-x-0.5 group-hover:text-[#6d5efc]">↗</span>
                 </a>
               ))}
             </nav>
           </div>
         </section>
 
-        <footer class="flex flex-col gap-6 border-t border-zinc-200/80 pt-5 text-sm text-zinc-500 sm:flex-row sm:items-end sm:justify-between lg:pb-1">
+        <footer class="border-t border-zinc-200/80 pt-5 text-sm text-zinc-500 lg:pb-1">
           <div>
             <p class="mb-1 text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#6d5efc]">Currently</p>
             <p class="text-zinc-800">Sales Representative · Noble</p>
             <p>London, Ontario</p>
           </div>
-
-          <p class="max-w-xs text-left leading-relaxed sm:text-right">
-            Software should reduce friction, not add to it.
-          </p>
         </footer>
       </div>
     </main>
