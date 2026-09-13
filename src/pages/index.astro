@@ -1,0 +1,63 @@
+---
+import '../styles/global.css';
+
+const links = [
+  { label: 'GitHub', href: 'https://github.com/LyndeCS' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/' },
+  { label: 'Email', href: 'mailto:hello@chrislynde.ca' },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Chris Lynde — operations, technology, process improvement, and digital systems."
+    />
+    <meta name="theme-color" content="#0d0f12" />
+    <title>Chris Lynde</title>
+  </head>
+  <body>
+    <main class="mx-auto flex min-h-screen w-full max-w-6xl flex-col justify-between px-6 py-8 sm:px-10 sm:py-10 lg:px-14 lg:py-12">
+      <header class="flex items-center justify-between text-sm text-zinc-400">
+        <span class="font-medium tracking-tight text-zinc-100">CL</span>
+        <span>London, Ontario</span>
+      </header>
+
+      <section class="max-w-4xl py-20 sm:py-28 lg:py-32">
+        <p class="mb-5 text-sm font-medium uppercase tracking-[0.18em] text-lime-300">
+          Operations · Technology · Process Improvement
+        </p>
+
+        <h1 class="max-w-3xl text-5xl font-semibold leading-[0.96] tracking-[-0.05em] text-zinc-50 sm:text-7xl lg:text-8xl">
+          Chris Lynde
+        </h1>
+
+        <p class="mt-8 max-w-2xl text-lg leading-8 text-zinc-400 sm:text-xl">
+          I build better ways of working by connecting operational knowledge with digital tools, data, and practical process improvement.
+        </p>
+      </section>
+
+      <footer class="flex flex-col gap-6 border-t border-white/10 pt-6 sm:flex-row sm:items-end sm:justify-between">
+        <p class="max-w-md text-sm leading-6 text-zinc-500">
+          Personal site. Intentionally simple.
+        </p>
+
+        <nav aria-label="External links" class="flex flex-wrap gap-x-6 gap-y-3 text-sm font-medium">
+          {links.map((link) => (
+            <a
+              href={link.href}
+              class="transition-colors duration-200 hover:text-lime-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lime-300"
+              target={link.href.startsWith('http') ? '_blank' : undefined}
+              rel={link.href.startsWith('http') ? 'noreferrer' : undefined}
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+      </footer>
+    </main>
+  </body>
+</html>
