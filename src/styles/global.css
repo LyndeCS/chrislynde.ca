@@ -20,8 +20,8 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   background:
-    radial-gradient(circle at 84% 38%, rgba(109, 94, 252, 0.025), transparent 32rem),
-    radial-gradient(circle at 72% 84%, rgba(182, 165, 255, 0.035), transparent 28rem),
+    radial-gradient(circle at 84% 38%, rgba(109, 94, 252, 0.02), transparent 32rem),
+    radial-gradient(circle at 72% 84%, rgba(182, 165, 255, 0.03), transparent 28rem),
     #f7f7f5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -33,13 +33,13 @@ body {
 
 .hero-accent {
   position: absolute;
-  top: -4%;
+  top: -6%;
   right: -4rem;
   display: none;
-  width: min(38vw, 38rem);
-  aspect-ratio: 4 / 5;
+  width: min(39vw, 40rem);
+  aspect-ratio: 240 / 344;
   background: url('/purple-mist-accent.svg') center / contain no-repeat;
-  filter: saturate(1.12) contrast(1.03);
+  filter: saturate(1.08) contrast(1.02);
   opacity: 1;
   pointer-events: none;
   z-index: 0;
