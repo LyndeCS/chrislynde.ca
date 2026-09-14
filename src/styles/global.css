@@ -12,6 +12,7 @@
 html {
   background: #f7f7f5;
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
@@ -21,8 +22,8 @@ body {
   min-height: 100dvh;
   overflow-x: clip;
   background:
-    radial-gradient(circle at 84% 38%, rgba(109, 94, 252, 0.02), transparent 32rem),
-    radial-gradient(circle at 72% 84%, rgba(182, 165, 255, 0.03), transparent 28rem),
+    radial-gradient(circle at 84% 38%, rgba(109, 94, 252, 0.018), transparent 32rem),
+    radial-gradient(circle at 72% 84%, rgba(182, 165, 255, 0.026), transparent 28rem),
     #f7f7f5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -34,13 +35,12 @@ body {
 
 .hero-accent {
   position: absolute;
-  top: -5%;
-  right: -5rem;
+  top: -8%;
+  right: -8rem;
   display: none;
-  width: min(39vw, 40rem);
-  aspect-ratio: 31 / 39;
-  background: url('/purple-mist-accent.svg') center / contain no-repeat;
-  filter: saturate(1.2) contrast(1.05);
+  width: min(36vw, 36rem);
+  aspect-ratio: 320 / 444;
+  background: url('/purple-mist-accent.svg') top right / contain no-repeat;
   opacity: 1;
   pointer-events: none;
   z-index: 0;
@@ -64,7 +64,7 @@ a {
 
 @media (min-width: 1608px) {
   .hero-accent {
-    right: calc((1480px - 100vw) / 2 - 2.5rem);
+    right: calc((1480px - 100vw) / 2 - 8rem);
   }
 }
 
