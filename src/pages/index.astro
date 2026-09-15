@@ -13,15 +13,19 @@ const links = [
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+
     <meta
       name="description"
       content="Chris Lynde — software solutions, automation, and systems that make everyday work simpler, faster, and more effective."
     />
+
     <meta name="theme-color" content="#f7f7f5" />
     <meta name="color-scheme" content="light" />
     <meta name="robots" content="index, follow" />
+
     <link rel="canonical" href="https://chrislynde.com/" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
     <meta property="og:title" content="Chris Lynde — Software Solutions" />
     <meta
       property="og:description"
@@ -30,17 +34,31 @@ const links = [
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://chrislynde.com/" />
     <meta property="og:site_name" content="Chris Lynde" />
+
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Chris Lynde — Software Solutions" />
     <meta
       name="twitter:description"
       content="Software solutions, automation, and systems that make everyday work simpler, faster, and more effective."
     />
+
     <title>Chris Lynde — Software Solutions</title>
   </head>
+
   <body>
-    <main class="min-h-dvh px-6 py-8 sm:px-10 sm:py-10 lg:px-16 lg:py-8">
-      <div class="mx-auto flex min-h-[calc(100dvh-4rem)] max-w-[1480px] flex-col sm:min-h-[calc(100dvh-5rem)] lg:min-h-[calc(100dvh-4rem)]">
+    <main
+      class="site-shell min-h-dvh px-6 py-8 sm:px-10 sm:py-10 lg:px-16 lg:py-8"
+    >
+      <img
+        src="/purple-watercolor-accent.png"
+        alt=""
+        aria-hidden="true"
+        class="hero-accent"
+      />
+
+      <div
+        class="relative z-10 mx-auto flex min-h-[calc(100dvh-4rem)] max-w-[1480px] flex-col sm:min-h-[calc(100dvh-5rem)] lg:min-h-[calc(100dvh-4rem)]"
+      >
         <header class="flex items-center text-zinc-500">
           <a
             href="/"
@@ -51,44 +69,82 @@ const links = [
           </a>
         </header>
 
-        <section class="relative flex flex-1 items-center py-16 sm:py-20 lg:py-10 xl:py-12">
-          <div class="relative z-10 w-full max-w-5xl">
-            <div aria-hidden="true" class="mb-8 h-[3px] w-12 rounded-full bg-[#6d5efc] sm:mb-10 lg:mb-7"></div>
+        <section
+          class="relative flex flex-1 items-center py-16 sm:py-20 lg:py-10 xl:py-12"
+        >
+          <div class="w-full max-w-5xl">
+            <div
+              aria-hidden="true"
+              class="mb-8 h-[3px] w-12 rounded-full bg-[#6d5efc] sm:mb-10 lg:mb-7"
+            ></div>
 
-            <p class="mb-5 text-sm font-medium tracking-[0.08em] text-zinc-500 sm:text-base lg:mb-4">
-              Software Solutions <span class="mx-2 text-zinc-300">·</span> Automation <span class="mx-2 text-zinc-300">·</span> Systems
+            <p
+              class="mb-5 text-sm font-medium tracking-[0.08em] text-zinc-500 sm:text-base lg:mb-4"
+            >
+              Software Solutions
+              <span class="mx-2 text-zinc-300">·</span>
+              Automation
+              <span class="mx-2 text-zinc-300">·</span>
+              Systems
             </p>
 
-            <h1 class="hero-title max-w-5xl font-semibold leading-[0.94] tracking-[-0.06em] text-zinc-950">
+            <h1
+              class="hero-title max-w-5xl font-semibold leading-[0.94] tracking-[-0.06em] text-zinc-950"
+            >
               I solve real-world problems by designing better ways to work.
             </h1>
 
-            <p class="mt-7 max-w-3xl text-lg leading-relaxed text-zinc-600 sm:mt-8 sm:text-xl lg:mt-6 lg:text-[1.25rem] lg:leading-[1.55]">
-              Using software, automation, and system design, I make everyday work simpler, faster, and more effective.
+            <p
+              class="mt-7 max-w-3xl text-lg leading-relaxed text-zinc-600 sm:mt-8 sm:text-xl lg:mt-6 lg:text-[1.25rem] lg:leading-[1.55]"
+            >
+              Using software, automation, and system design, I make everyday
+              work simpler, faster, and more effective.
             </p>
 
-            <nav aria-label="Contact and profile links" class="mt-9 flex flex-wrap gap-3 sm:mt-10 lg:mt-7">
-              {links.map((link) => (
-                <a
-                  href={link.href}
-                  target={link.href.startsWith('http') ? '_blank' : undefined}
-                  rel={link.href.startsWith('http') ? 'noreferrer' : undefined}
-                  class="group inline-flex items-center gap-3 rounded-full border border-zinc-300/80 bg-white/55 px-5 py-3 text-sm font-medium text-zinc-800 backdrop-blur-sm transition hover:-translate-y-0.5 hover:border-[#6d5efc]/50 hover:bg-[#6d5efc]/[0.03] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#6d5efc]"
-                >
-                  {link.label}
-                  <span aria-hidden="true" class="text-zinc-400 transition-all group-hover:translate-x-0.5 group-hover:text-[#6d5efc]">↗</span>
-                </a>
-              ))}
+            <nav
+              aria-label="Contact and profile links"
+              class="mt-9 flex flex-wrap gap-3 sm:mt-10 lg:mt-7"
+            >
+              {
+                links.map((link) => (
+                  <a
+                    href={link.href}
+                    target={link.href.startsWith('http') ? '_blank' : undefined}
+                    rel={
+                      link.href.startsWith('http')
+                        ? 'noreferrer'
+                        : undefined
+                    }
+                    class="group inline-flex items-center gap-3 rounded-full border border-zinc-300/80 bg-white/55 px-5 py-3 text-sm font-medium text-zinc-800 backdrop-blur-sm transition hover:-translate-y-0.5 hover:border-[#6d5efc]/50 hover:bg-[#6d5efc]/[0.03] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#6d5efc]"
+                  >
+                    {link.label}
+                    <span
+                      aria-hidden="true"
+                      class="text-zinc-400 transition-all group-hover:translate-x-0.5 group-hover:text-[#6d5efc]"
+                    >
+                      ↗
+                    </span>
+                  </a>
+                ))
+              }
             </nav>
           </div>
-
-          <div class="hero-accent" aria-hidden="true"></div>
         </section>
 
-        <footer class="border-t border-zinc-200/80 pt-5 text-sm text-zinc-500 lg:pb-1">
+        <footer
+          class="border-t border-zinc-200/80 pt-5 text-sm text-zinc-500 lg:pb-1"
+        >
           <div>
-            <p class="mb-1 text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#6d5efc]">Currently</p>
-            <p class="text-zinc-800">Sales Representative · Noble</p>
+            <p
+              class="mb-1 text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#6d5efc]"
+            >
+              Currently
+            </p>
+
+            <p class="text-zinc-800">
+              Sales Representative · Noble
+            </p>
+
             <p>London, Ontario</p>
           </div>
         </footer>

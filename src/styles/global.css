@@ -10,8 +10,10 @@
 		BlinkMacSystemFont,
 		"Segoe UI",
 		sans-serif;
+
 	background: #f7f7f5;
 	color: #101015;
+
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 }
@@ -28,6 +30,7 @@ body {
 	min-height: 100vh;
 	min-height: 100dvh;
 	overflow-x: clip;
+
 	background:
 		radial-gradient(
 			circle at 84% 38%,
@@ -40,25 +43,9 @@ body {
 			transparent 28rem
 		),
 		#f7f7f5;
+
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-
-.hero-title {
-	font-size: clamp(3.25rem, min(6.2vw, 10vh), 6.5rem);
-}
-
-.hero-accent {
-	position: absolute;
-	top: 1.5%;
-	right: -6rem;
-	display: none;
-	width: min(34vw, 34rem);
-	aspect-ratio: 4 / 5;
-	background: url("/purple-watercolor-accent.png") top right / contain no-repeat;
-	opacity: 0.98;
-	pointer-events: none;
-	z-index: 0;
 }
 
 a {
@@ -71,18 +58,99 @@ a {
 	color: white;
 }
 
-@media (min-width: 1280px) {
+/* -------------------------------------------------
+   Page shell
+   ------------------------------------------------- */
+
+.site-shell {
+	position: relative;
+	overflow: hidden;
+}
+
+/* -------------------------------------------------
+   Hero typography
+   ------------------------------------------------- */
+
+.hero-title {
+	font-size: clamp(3.25rem, min(6.2vw, 10vh), 6.5rem);
+}
+
+/* -------------------------------------------------
+   Watercolor accent
+   ------------------------------------------------- */
+
+.hero-accent {
+	position: absolute;
+
+	/*
+   * Anchored to the full-width page shell,
+   * not the centered 1480px content container.
+   */
+	top: 7%;
+	right: 0;
+
+	/*
+   * Responsive to both viewport width and height.
+   * This keeps it balanced on wide monitors
+   * and shorter laptop displays.
+   */
+	width: clamp(22rem, min(35vw, 68vh), 43rem);
+
+	height: auto;
+
+	display: block;
+
+	pointer-events: none;
+	user-select: none;
+
+	z-index: 0;
+}
+
+/*
+ * If the PNG itself contains a little transparent
+ * padding on its right edge, use this instead:
+ *
+ * right: -1rem;
+ *
+ * Increase to -2rem or -3rem only if necessary.
+ */
+
+/* -------------------------------------------------
+   Responsive accent sizing
+   ------------------------------------------------- */
+
+@media (max-width: 1279px) {
 	.hero-accent {
-		display: block;
+		top: 10%;
+
+		width: clamp(20rem, min(38vw, 60vh), 30rem);
 	}
 }
 
-@media (min-width: 1536px) {
+@media (max-width: 1024px) {
 	.hero-accent {
-		right: -7rem;
-		width: min(35vw, 36rem);
+		top: 12%;
+		right: -1.5rem;
+
+		width: clamp(18rem, 40vw, 26rem);
+
+		opacity: 0.8;
 	}
 }
+
+/*
+ * The artwork becomes less useful once the text
+ * occupies most of the viewport.
+ */
+@media (max-width: 900px) {
+	.hero-accent {
+		display: none;
+	}
+}
+
+/* -------------------------------------------------
+   Reduced motion
+   ------------------------------------------------- */
 
 @media (prefers-reduced-motion: reduce) {
 	html {
